@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 const reviewSchema = new mongoose.Schema({
-    // id: Number,
     id: { 
         type: String, 
         required: true, 
@@ -12,7 +11,6 @@ const reviewSchema = new mongoose.Schema({
     },
     url: {
         type: String,
-        required: true,
     },
     text: {
         type: String,
