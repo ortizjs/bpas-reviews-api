@@ -6,7 +6,7 @@ const connectDB = async () => {
         await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-        }, 6000000);
+        });
         console.log('Success: MongoDB connected!');
 
         mongoose.connection.on('disconnected', () => {
